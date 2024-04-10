@@ -10,12 +10,13 @@ const n4 = 5;
 // arithmetic operators and a comparison.
 const isSum50 = n1 + n2 + n3 + n4 == 50;
 console.log(isSum50);
+
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
-
+console.log(isSum50);
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
@@ -51,3 +52,8 @@ const dontDoThis =
   n2 != n3 &&
   n2 != n4 &&
   n3 != n4;
+
+//------------  n/5 -------//
+// Used the modules operator to determine if the remainder of 5 from the numbers equal 0
+const divisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
+console.log(divisibleBy5); // true
