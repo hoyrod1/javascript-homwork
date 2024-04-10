@@ -53,6 +53,7 @@ const dontDoThis =
   n2 != n4 &&
   n3 != n4;
 
+/**-----------------------------------------------------------------------------------**/
 //------------  n/5 -------//
 // Used the modules operator to determine if the remainder of 5 from the numbers equal 0
 const divisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
@@ -66,3 +67,7 @@ console.log(isItLarger); // true
 //--- ((n2 - n1) * n3) % 4 ---//
 const answer = ((n2 - n1) * 3) % n4 === 0;
 console.log(answer); // true
+
+// isOver25 //
+const olderThan25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+console.log(olderThan25); // true
