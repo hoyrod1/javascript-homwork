@@ -57,3 +57,8 @@ const dontDoThis =
 // Used the modules operator to determine if the remainder of 5 from the numbers equal 0
 const divisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
 console.log(divisibleBy5); // true
+
+//---------  n1 > n45 -------//
+// used the ternary operator to check if the first number is greater than the last number
+const isItLarger = n1 > n4 ? true : false;
+console.log(isItLarger); // true
