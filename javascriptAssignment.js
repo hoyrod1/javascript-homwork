@@ -55,7 +55,7 @@ const dontDoThis =
   n2 != n4 &&
   n3 != n4;
 
-/**-----------------------------------------------------------------------------------**/
+/**-------------------------------------------------- Part 1 --------------------------------------------------**/
 //------------  n/5 -------//
 // Used the modules operator to determine if the remainder of 5 from the numbers equal 0
 const divisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
@@ -81,3 +81,37 @@ const olderThan25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 console.log(
   `The value returned from this operation is ${olderThan25} because all the number are not over 25`
 ); // false
+//---------------------------------------------------------------------------------------------------------------//
+
+/**-------------------------------------------------- Part 2 --------------------------------------------------**/
+// totalDistance = 1500
+// 55mph = 1hr * 30 miles per gallon
+// 60mph = 1hr * 28 miles per gallon
+// 75mph = 1hr * 23 miles per gallon
+
+// 525 gallons of gas
+let totalGallonsOfGas = 175 * 3;
+console.log(
+  `You can purchase ${totalGallonsOfGas} gallons of gas with a fuel budget of $175 and the average cost of gas being $3`
+);
+
+const oneHour = 1;
+
+const fiftyFiveMph = 1500 / 30;
+const totalHrs55Mph = fiftyFiveMph * oneHour;
+console.log(
+  `When driving at a speed of 55 miles per hour we will use up ${fiftyFiveMph} gallons of gas and will take ${totalHrs55Mph} hours`
+);
+const sixtyMph = 1500 / 28;
+const totalHrs60Mph = sixtyMph * oneHour;
+console.log(
+  `When driving at a speed of 60 miles per hour we will use up ${sixtyMph} gallons of gas and will take ${totalHrs60Mph} hours`
+);
+const seventyFiveMph = 1500 / 23;
+const totalHrs75Mph = seventyFiveMph * oneHour;
+console.log(
+  `When driving at a speed of 75 miles per hour we will use up ${seventyFiveMph} gallons of gas will take ${totalHrs75Mph} hours`
+);
+//---------------------------------------------------------------------------------------------------------------------------//
+
+/**--------------------------------------------------------- Part 3 ---------------------------------------------------------**/
