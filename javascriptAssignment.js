@@ -81,7 +81,6 @@ const olderThan25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 console.log(
   `The value returned from this operation is ${olderThan25} because all the number are not over 25`
 ); // false
-//---------------------------------------------------------------------------------------------------------------//
 
 /**-------------------------------------------------- Part 2 --------------------------------------------------**/
 // totalDistance = 1500
@@ -100,18 +99,29 @@ const oneHour = 1;
 const fiftyFiveMph = 1500 / 30;
 const totalHrs55Mph = fiftyFiveMph * oneHour;
 console.log(
-  `When driving at a speed of 55 miles per hour we will use up ${fiftyFiveMph} gallons of gas and will take ${totalHrs55Mph} hours`
+  `When driving at a speed of 55 miles per hour we will use up ${fiftyFiveMph} gallons of gas and the trip will take ${totalHrs55Mph} hours`
 );
 const sixtyMph = 1500 / 28;
 const totalHrs60Mph = sixtyMph * oneHour;
 console.log(
-  `When driving at a speed of 60 miles per hour we will use up ${sixtyMph} gallons of gas and will take ${totalHrs60Mph} hours`
+  `When driving at a speed of 60 miles per hour we will use up ${sixtyMph} gallons of gas and the trip will take ${totalHrs60Mph} hours`
 );
 const seventyFiveMph = 1500 / 23;
 const totalHrs75Mph = seventyFiveMph * oneHour;
 console.log(
-  `When driving at a speed of 75 miles per hour we will use up ${seventyFiveMph} gallons of gas will take ${totalHrs75Mph} hours`
+  `When driving at a speed of 75 miles per hour we will use up ${seventyFiveMph} gallons of gas and the trip will take ${totalHrs75Mph} hours`
 );
-//---------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------------------//
 
-/**--------------------------------------------------------- Part 3 ---------------------------------------------------------**/
+if (totalHrs55Mph < totalHrs60Mph && totalHrs55Mph < totalHrs75Mph) {
+  console.log("Driving at 55mph is the slowest but the cheapest");
+}
+
+if (totalHrs60Mph > totalHrs55Mph && totalHrs60Mph < totalHrs75Mph) {
+  console.log(
+    "Driving at 65mph is the fastest than driving at 55 mph but the more expensive and slower than driving ar 75 mph but cheaper than drivng at 75 mph"
+  );
+}
+if (totalHrs75Mph > totalHrs60Mph && totalHrs75Mph > totalHrs55Mph) {
+  console.log("Driving at 75mph is the fastest but the most expensive");
+}
