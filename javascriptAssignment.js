@@ -9,7 +9,9 @@ const n4 = 5;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = n1 + n2 + n3 + n4 == 50;
-console.log(isSum50);
+console.log(
+  `The value returned from this operation is ${isSum50} which means the four numbers add up to 50`
+);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
@@ -57,17 +59,25 @@ const dontDoThis =
 //------------  n/5 -------//
 // Used the modules operator to determine if the remainder of 5 from the numbers equal 0
 const divisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0;
-console.log(divisibleBy5); // true
+console.log(
+  `The value returned from this operation is ${divisibleBy5} because all the numbers are divisible by 5`
+); // true
 
 //---------  n1 > n45 -------//
 // used the ternary operator to check if the first number is greater than the last number
 const isItLarger = n1 > n4 ? true : false;
-console.log(isItLarger); // true
+console.log(
+  `The value returned from this operation is ${isItLarger} because the first number is greater than the last number`
+); // true
 
 //--- ((n2 - n1) * n3) % 4 ---//
 const answer = ((n2 - n1) * 3) % n4 === 0;
-console.log(answer); // true
+console.log(
+  `After using this operation, ((n2 - n1) * n3) % 4, the value returned from this operation is ${answer}`
+); // true
 
 // isOver25 //
 const olderThan25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
-console.log(olderThan25); // true
+console.log(
+  `The value returned from this operation is ${olderThan25} because all the number are not over 25`
+); // false
