@@ -62,3 +62,7 @@ console.log(divisibleBy5); // true
 // used the ternary operator to check if the first number is greater than the last number
 const isItLarger = n1 > n4 ? true : false;
 console.log(isItLarger); // true
+
+//--- ((n2 - n1) * n3) % 4 ---//
+const answer = ((n2 - n1) * 3) % n4 === 0;
+console.log(answer); // true
